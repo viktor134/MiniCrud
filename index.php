@@ -86,6 +86,7 @@ require_once 'users/user_get.php'
                 <?foreach ($users as $user):?>
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
+
                         <img src="../uploads/<?=$user['image']?>" width="300px">
                         <div class="card-body">
                             <p class="card-text"><?=$user['name']?></p>

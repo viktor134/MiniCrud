@@ -7,6 +7,7 @@ $statement->bindValue(1,$id);
 $statement->execute();
 $user=$statement->fetch(PDO::FETCH_ASSOC);
 
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -40,7 +41,7 @@ $user=$statement->fetch(PDO::FETCH_ASSOC);
         <div class="form-group">
             <label class="control-label col-sm-2" for="pwd">Password</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control" id="password" placeholder="" name="password" value="<?=$user['password']?>"">
+                <input type="password" class="form-control" id="password" placeholder="" name="password">
             </div>
         </div>
 
